@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'lato', 'sans-serif';
+    margin-top: 17px;
+}
+
+.conteudo {
+    left: 50%;
+    margin: 0 0 0 -250px;/*centraliza os quadrados*/
+    position: absolute;
+    width: 500px; /*aumenta a largura dos quadrados*/
+}
+.calendario{
+    text-align: center;
+}
+.conteudo .calendario header{
+    position: relative;
+
+}
+h2 {
+    margin-top: 20px;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+.calendario table{
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+.calendario thead{
+    font-weight: 600; /* negrtito*/
+    text-transform: uppercase;
+}
+.calendario td{
+    border: 1px solid #cbd1d2; /* da uma bordar para todos os numeros, deixando eles com as linhas em volta*/
+    height: 71.4px;
+    text-align: center;
+    width: 71.4px;
+}
+.calendario tbody td{ /* permite selecionar com cursor*/
+    cursor: pointer;
+}
+.calendario tbody td:hover{ /*deixa os numeros com cor ao selecionar*/
+    background: rgba(56, 142, 60, 1);
+    color: #f9f9f9; /*cor do numero continua branco*/
+}
+.calendario tbody td.mes-anterior{
+    color: darkgrey;
+}
+.mes-seguinte{
+    color: darkgrey;
+}
+.evento a{
+    text-decoration: none;
+    color: black;
+    padding: 1.9rem;
+}
+.evento{
+    position: relative;
+}
+.evento::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    left: 50%;
+    bottom: 7px;
+    margin: -3.5px 0 0 -3.5px;
+    background: #00addf;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+.evento2{
+    position: relative;
+}
+.evento2::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    left: 50%;
+    bottom: 7px;
+    margin: -3.5px 0 0 -3.5px;
+    background: rgba(238, 130, 238, 1);
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+.evento2 a{
+    text-decoration: none;
+    color: black;
+    padding: 1.9rem;
+}
+figcaption{
+    font-size: 15px;
+}
+.evento3 a{
+    text-decoration: none;
+    color: black;
+    padding: 1.9rem;
+}
+.evento3{
+    position: relative;
+}
+.evento3::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    left: 50%;
+    bottom: 7px;
+    margin: -3.5px 0 0 -3.5px;
+    background: rgba(139, 0, 0, 1);
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+#legenda1{
+    color: #00addf;
+}
+#legenda2{
+    color: rgba(238, 130, 238, 1);
+}
+#legenda3{
+    color: rgba(139, 0, 0, 1);
+}
